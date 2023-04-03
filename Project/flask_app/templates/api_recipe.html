@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %} {{recipe['title']}} {% endblock %}
+{% block body %}
+<div style="max-width: 70%; margin: auto; padding-top:3%">
+  <!-- Nav Bar -->
+  <div class="row hm-main-navbar sticky-top px-4">
+    <nav class="navbar navbar-expand-md" style="background-color: rgb(222,171,3)">
+        <div class="col col-md-4 navbar-logo">My Digital Cookbook</div>
+        <div class="col navbar-links">
+            <div class="d-flex justify-content-end">
+                <button type="button" id="sign-in" class="btn-nav btn btn-outline-success btn-sm">Sign In</button>
+                <button type="button" id="register" class="btn-nav btn btn-success btn-sm">Sign Up</button>
+            </div>
+            <div class="navbar-links">
+                <ul class="ml-auto justify-content-end navbar-nav ">
+                    <li class="nav-item"><a style="color: #428803" href="/welcome">Home |</a></li>
+                    <li class="nav-item"><a style="color: #428803" href="/recipeshome">Recipes |</a></li>
+                    <li class="nav-item"><a style="color: #428803" href="/mealplans">Meal Plans |</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div >
+  <div class="media">
+      <img src="{{recipe['image']}}" class="mr-3" alt="..." width="20%" height="20%">
+      <div class="media-body">
+        <h5 class="mt-0">{{recipe['title']}}</h5>
+        {{recipe['instructions']}}
+      </div>
+  </div><br>
+  {{recipe['nutritionWidget'] | safe }}<br>
+  {{recipe['nutritionLabel'] | safe}}
+</div>
+<a class="btn btn-primary m-4  ps-3 form-group" href="/welcome">Back to Recipes</a>
+{% endblock %}

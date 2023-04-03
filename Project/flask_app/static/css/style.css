@@ -1,0 +1,39 @@
+*{
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.meal_plan {
+    background-image: url('/static/Image/March_Meal-Prep-1030x515.jpeg');
+    background-repeat:no-repeat;
+    background-size: auto;
+    height: 600px;
+}
+
+.cookbook {
+    background-image: url('/static/Image/cookbook.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    border-radius: 10px 100px / 120px;
+    height: 1000px;
+    padding-top: 220px;
+    padding-left: 20%;
+
+}
+
+.cookbook_heading{
+    font-size: 3em;
+
+}
+
+
+a:link {
+    
+    text-decoration: none;
+    
+   
+}
+
+li {
+    padding: 0px 2px;
+    color: black;
+}
