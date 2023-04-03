@@ -16,6 +16,7 @@ I like jokes, so there is a random food related joke each time that page loads.
 
 - [Installation](#installation)
 - [License](#license)
+- [Features] (#features)
 
 ## Installation
 
