@@ -15,6 +15,7 @@
     background-size: cover;
     border-radius: 10px 100px / 120px;
     height: 1000px;
+    width: 100%;
     padding-top: 220px;
     padding-left: 20%;
 
@@ -22,6 +23,7 @@
 
 .cookbook_heading{
     font-size: 3em;
+    width: 50%;
 
 }
 
